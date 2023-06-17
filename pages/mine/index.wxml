@@ -1,0 +1,47 @@
+<!--pages/mine/index.wxml-->
+<image src="/static/top1.png" mode="widthFix" class="bg" />
+<view class="flex gap-sm m-md radius-sm bg-white p-md c-secondary" style="margin-top: -50px;">
+  <van-image width="3.5em" height="3.5em" src="/static/logo.png" />
+  <view>
+    <text>高一峰</text>
+    <text class="ellipsis-2">四川成都市四川托普信息技术职业学院计算机系2021级PB软件技术专业3B班</text>
+  </view>
+</view>
+<view class="bg-white mb-md px-md c-secondary">
+  <view class="flex justify-between items-center py-sm">
+    <view class="flex items-center gap-sm">
+      <view class="dot" />
+      <text>团内激励</text>
+    </view>
+    <van-icon name="arrow" />
+  </view>
+  <view class="p-2xl align-center">
+    <text>暂无荣耀</text>
+  </view>
+</view>
+<view class="bg-white py-sm mb-md px-md c-secondary">
+  <view class="flex justify-between items-center  pb-sm">
+    <view class="flex items-center gap-sm">
+      <view class="dot" />
+      <text>我的</text>
+    </view>
+  </view>
+  <view class="grid column-4">
+    <view class="flex column text-sm gap-sm align-center">
+      <van-image width="3em" height="3em" src="/static/sanhui1.png" />
+      <text>组织生活</text>
+    </view>
+  </view>
+</view>
+<view class="px-md bg-white" wx:for="{{menu}}" wx:key="index" >
+ <view class="py-sm flex justify-between align-center bb-1 solid">
+  <view class="flex gap-sm items-center">
+    <van-image width="1.5em" height="1.5em" src="{{item.icon}}" />
+    <text>{{item.text}}</text>
+  </view>
+  <van-icon name="arrow" />
+ </view>
+</view>
+<view class="align-center mt-md bg-white p-md">
+  <text>解除绑定</text>
+</view>

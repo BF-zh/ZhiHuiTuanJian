@@ -1,0 +1,25 @@
+<!--pages/message/index.wxml-->
+<view style="text-indent:2em;" class="m-md c-secondary">
+  总共收到
+  <text class="c-link">{{list.length}}</text>
+  条操作提示，
+  <text class="c-link">0</text>
+  项待操作、
+  <text class="c-link">0</text>
+  项已操作、
+  <text class="c-link">{{list.length}}</text>
+  项相依提醒
+  <text class="c-link">0</text>
+  项未读消息
+</view>
+<view class="m-md bg-white px-sm radius-sm" wx:for="{{list}}">
+  <view class="flex py-sm justify-between bb-1 solid">
+    <text>{{item.title}}</text>
+    <text style="--border-color:var(--link-color)" class="text-xs c-link radius-sm px-sm py-xs b-1 solid">消息提醒</text>
+  </view>
+  <view class="flex py-sm column gap-sm text-sm c-secondary">
+    <text>消息内容：{{item.content}}</text>
+    <text>发送方：{{item.sendFrom}}</text>
+    <text>发送时间：{{item.sendTime}}</text>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+/* pages/mine/index.wxss */
+.bg{
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+.dot{
+  --seze:3px;
+  width: var(--seze);
+  height: 1em;
+  background: var(--primary-color);
+}

@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/home/index",
+    "pages/recommend/index",
+    "pages/message/index",
+    "pages/organize/index",
+    "pages/vieRegister/index",
+    "pages/mine/index"
+  ],
+  "tabBar": {
+    "selectedColor": "#df201f",
+    "list": [
+      {
+      "pagePath": "pages/home/index",
+      "text": "首页",
+      "iconPath": "/static/home_unselect.png",
+      "selectedIconPath": "/static/home_select.png"
+    },
+      {
+      "pagePath": "pages/recommend/index",
+      "text": "推荐",
+      "iconPath": "/static/tuijian_unselect.png",
+      "selectedIconPath": "/static/tuijian_select.png"
+    },
+      {
+      "pagePath": "pages/message/index",
+      "text": "消息",
+      "iconPath": "/static/msg_unselect.png",
+      "selectedIconPath": "/static/msg_select.png"
+    },
+      {
+      "pagePath": "pages/mine/index",
+      "text": "我的",
+      "iconPath": "/static/mine_unselect.png",
+      "selectedIconPath": "/static/mine_select.png"
+    }
+  ]
+  },
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-image": "@vant/weapp/image/index"
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#df201f",
+    "navigationBarTitleText": "团中央智慧团建",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

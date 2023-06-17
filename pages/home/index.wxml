@@ -1,0 +1,33 @@
+<!--pages/home/index.wxml-->
+<image src="/static/bg.jpeg" mode="widthFix" class="bg" />
+<view class="flex gap-sm m-md radius-sm bg-white p-md c-secondary" style="margin-top: -50px;">
+  <van-image width="3.5em" height="3.5em" src="/static/logo.png" />
+  <view>
+    <text>高一峰</text>
+    <text class="ellipsis-2">四川成都市四川托普信息技术职业学院计算机系2021级PB软件技术专业3B班</text>
+  </view>
+</view>
+<view class="flex gap-md p-md bg-white items-center c-secondary">
+  <van-image width="2em" height="2em" src="/static/notice.png" />
+  <text class="text-sm">关于常规业务流程、操作方法等问题，可查看PC端“常见问题”或直接咨询上级团组管理员；</text>
+</view>
+<view class="my-md grid column-3 row-2 bg-white p-md c-secondary">
+  <view class="flex column gap-sm align-center mb-sm" wx:for="{{gridList}}" data-item="{{item}}" bindtap="handleClickGridItem" wx:key="index">
+    <van-image width="2em" height="2em" src="{{item.src}}" />
+    <text class="text-sm">{{item.text}}</text>
+  </view>
+</view>
+<view class="px-md c-primary py-sm bg-white align-center">
+  <text>组织成员</text>
+</view>
+<scroll-view scroll-x class="w-full c-secondary my-md py-md bg-white">
+  <view class="flex">
+    <view wx:for="{{vipList}}" wx:key="index" class="relative p-2xl ml-md flex column align-center">
+      <image src="/static/bgliebiao.png" style="z-index: 0;left: 0;top: 0;" class="absolute w-full h-full radius-sm" mode="widthFix" />
+      <van-image width="5em" round height="5em" src="/static/boy.png" />
+      <text wx:if="{{item.position}}" style="left: 0;top: 0;" class="absolute bg-primary c-white text-xs px-sm py-xs">{{item.position}}</text>
+      <text class="relative">{{item.text}}</text>
+      <text class="relative">{{item.phone}}</text>
+    </view>
+  </view>
+</scroll-view>

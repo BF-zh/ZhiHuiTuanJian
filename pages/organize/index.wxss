@@ -1,0 +1,7 @@
+/* pages/organize/index.wxss */
+.dot{
+  --seze:3px;
+  width: var(--seze);
+  height: 1em;
+  background: var(--primary-color);
+}

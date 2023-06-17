@@ -1,0 +1,59 @@
+<!--pages/organize/index.wxml-->
+<view style="height: 5em;" class="bg-primary" />
+<view style="margin-top: -4em;" class="align-center mb-2xl">
+  <van-image width="8em" round height="8em" src="/static/boy.png" />
+</view>
+<view class="bg-white mb-md px-md pb-md">
+  <view class="flex justify-between items-center py-sm">
+    <view class="flex items-center text-xl gap-sm">
+      <view class="dot" />
+      <text>团队组织名称</text>
+    </view>
+    <van-icon color="var(--secondary-color)" name="arrow" />
+  </view>
+  <view class="grid column-2 mt-md items-baseline">
+    <text>团队简称</text>
+    <text class="align-end c-secondary ellipsis-2">2020级PB软件技术3B班团支部</text>
+  </view>
+  <view class="grid column-2 mt-md items-baseline">
+    <text>组织全称</text>
+    <text class="align-end c-secondary ellipsis-2">四川省成都市四川托普信息技术职业学院计算机系团支部</text>
+  </view>
+  <view class="grid column-2 mt-md items-baseline">
+    <text>上级组织</text>
+    <text class="align-end c-secondary ellipsis-2">四川省成都市四川托普信息技术职业学院计算机系团支部</text>
+  </view>
+  <view class="grid column-2 mt-md items-baseline">
+    <text>纲织类别</text>
+  </view>
+  <view class="grid column-2 mt-md items-baseline">
+    <text>所属行业</text>
+  </view>
+  <view class="grid column-2 mt-md items-baseline">
+    <text>团员人数</text>
+    <text class="align-end c-secondary ellipsis-2">25位</text>
+  </view>
+</view>
+<view class="bg-white mb-md px-md">
+  <view class="flex justify-between items-center py-sm">
+    <view class="flex items-center text-xl gap-sm">
+      <view class="dot" />
+      <text>团队组织名称</text>
+    </view>
+    <van-icon color="var(--secondary-color)" name="arrow" />
+  </view>
+  <view wx:for="{{list}}" class="bb-1 solid">
+    <view class="py-sm flex justify-between items-center">
+      <text>{{item.text}}</text>
+      <text style="--border-color:var(--link-color)" class="b-1 solid px-xs text-xs c-link">已通过</text>
+    </view>
+    <view class="py-sm flex justify-between items-center">
+      <text>手机号码</text>
+      <text class="text-sm c-secondary">{{item.phone}}</text>
+    </view>
+    <view class="py-sm flex justify-between items-center">
+      <text>职位</text>
+      <text class="text-sm c-secondary">{{item.position}}</text>
+    </view>
+  </view>
+</view>

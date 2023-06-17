@@ -1,0 +1,8 @@
+<!--pages/recommend/index.wxml-->
+<view class="px-2xl pt-md">
+  <image class="w-full" src="/static/twbk.png" mode="widthFix"/>
+</view>
+<view class="px-2xl pt-md">
+  <image class="w-full" src="/static/qnzjypt.png" mode="widthFix"/>
+</view>
+

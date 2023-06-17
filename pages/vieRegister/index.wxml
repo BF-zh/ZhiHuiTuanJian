@@ -1,0 +1,13 @@
+<!--pages/vieRegister/index.wxml-->
+<view wx:for="{{list}}" wx:key="index" class="m-md bg-white p-md radius-sm">
+  <view class="align-end">
+    <text class="text-sm c-secondary">{{item.time}}年</text>
+  </view>
+  <view class="text-l p-2xl align-center c-primary">
+    <text>{{item.message}}</text>
+  </view>
+  <view class="flex justify-between items-baseline">
+    <text>团员教育评议</text>
+    <text class="c-primary text-sm">{{item.statu}}</text>
+  </view>
+</view>
